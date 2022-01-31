@@ -69,6 +69,7 @@ public class Search_section {
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
 		Config.test.pass("Test Passed");
+		Config.log.info("Test Passed employee name");
 	}// end VAlidatEmployeeName method
 
 	//test
@@ -90,6 +91,7 @@ public class Search_section {
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
 		Config.test.pass("Test Passed");
+		Config.log.info("Test Passed Status dropdown is Selected to enabled");
 	}// end validateStatus method	
 
 }// end class Search_section

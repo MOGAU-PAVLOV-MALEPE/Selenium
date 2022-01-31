@@ -36,6 +36,7 @@ public class Admin_tab {
 		Config.test = Config.extent.createTest("delete validation", "validate that delete button is displayed");
 		WebElement delete_btn = Config.driver.findElement(By.name(Locators.delete_button));
 
+
 		if(delete_btn.isDisplayed()) {
 			Config.test.pass("delete button is displayed");
 			Config.log.info("Test Passed delete button is displayed");

@@ -26,9 +26,9 @@ public class LogOut {
 	// Validation
 	
 	@Test(priority = 23)
-	public void validateUserLogin () {
+	public void validateUserLogout () {
 		//test case and description
-		Config.test = Config.extent.createTest("User should contain login", "validate if user contain login");
+		Config.test = Config.extent.createTest("User should contain logout", "validate if user contain logout");
 		
 		//checking if current url contains val_login or not
 		if(Config.driver.getCurrentUrl().contains(Locators.login_button)) {
@@ -40,7 +40,8 @@ public class LogOut {
 
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
-		Config.test.pass("url contain login");
+		Config.test.pass("url contain logout");
+		Config.log.info("Test Passed  user contain logout");
 		}
 
 		//test
@@ -54,6 +55,8 @@ public class LogOut {
 
 				Assert.assertEquals(actualTitle, expectedTitle);
 				Config.test.pass("Test Passed");
+				Config.log.info("Test Passed Title is OrangeHRM");
+				
 				
 		}// end validateTitle  method
 	
