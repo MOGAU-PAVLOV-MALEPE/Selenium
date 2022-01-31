@@ -36,7 +36,7 @@ public class Search_section {
 		//calling username by xpath
 		WebElement val_user = Config.driver.findElement(By.xpath(Locators.search_Username));
 		//validate that username text is input.username or not
-		if(val_user.getText().equalsIgnoreCase(Instance_Variables.search_Username)) {
+		if(val_user.getText().equalsIgnoreCase(Instance_Variables.searchName)) {
 			Config.rs = true;;
 		}
 		else {
@@ -44,8 +44,8 @@ public class Search_section {
 		}
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(true);
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed  Searched  added username");
+		Config.test.pass("Test Passed Searched  added username");
+	
 	}// end ValidateUsername method
 
 
@@ -68,8 +68,8 @@ public class Search_section {
 		}
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed employee name");
+		Config.test.pass("Test Passed employee name");
+		
 	}// end VAlidatEmployeeName method
 
 	//test
@@ -90,8 +90,8 @@ public class Search_section {
 		}
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed Status dropdown is Selected to enabled");
+		Config.test.pass("Test Passed Status dropdown is Selected to enabled");
+		
 	}// end validateStatus method	
 
 }// end class Search_section

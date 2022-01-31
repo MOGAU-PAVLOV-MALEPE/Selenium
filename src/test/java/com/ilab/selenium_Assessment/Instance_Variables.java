@@ -9,6 +9,7 @@ public class Instance_Variables {
 	static String Username = "Selenium12693";
 	static String status = "Enabled";
 	static String Password = "Selenium500";
+	static String searchName = "Selenium500";
 	static String Confirm_Password = Password;
 	static String search_Username = Username;
 

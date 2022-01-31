@@ -26,8 +26,8 @@ public class Add_button {
 		// validate URL contains dashboard
 		String actualTitle = Config.driver.getCurrentUrl();
 		Assert.assertTrue(actualTitle.contains("saveSystemUsers"));
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed");
+		Config.test.pass("Test Passed url contains keyword saveSystemUsers");
+		
 
 	}// end viewSystemUser method
 
@@ -42,8 +42,8 @@ public class Add_button {
 		WebElement user_header = Config.driver.findElement(By.id(Locators.Add_User));
 		//checking if user header is displayed
 		if(user_header.isDisplayed()) {
-			Config.test.pass("User H1 should is displayed");
-			Config.log.info("Test Passed");
+			Config.test.pass("Test Passed User H1 should is displayed");
+			
 		}// end if
 	}// end AddUserH1
 

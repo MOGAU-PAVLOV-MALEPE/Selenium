@@ -26,8 +26,8 @@ public class Admin_tab {
 		// validate URL contains dashboard
 		String actualTitle = Config.driver.getCurrentUrl();
 		Assert.assertTrue(actualTitle.contains("viewSystemUsers"));
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed url contains keyword viewSystemUsers");
+		Config.test.pass("Test Passed url contains keyword viewSystemUsers");
+		
 
 	}// end viewSystemUser method
 
@@ -38,8 +38,8 @@ public class Admin_tab {
 
 
 		if(delete_btn.isDisplayed()) {
-			Config.test.pass("delete button is displayed");
-			Config.log.info("Test Passed delete button is displayed");
+			Config.test.pass("Test Passed delete button is displayed");
+			
 		}// end if
 	} // end Delete method
 	
@@ -50,8 +50,8 @@ public class Admin_tab {
 		WebElement search_btn = Config.driver.findElement(By.name(Locators.search_button));
 
 		if(search_btn.isDisplayed()) {
-			Config.test.pass("search button is displayed");
-			Config.log.info("Test Passed search button is displayed");
+			Config.test.pass(" Test Passed search button is displayed");
+			
 		}// end if
 	}// end Search method
 
@@ -62,8 +62,8 @@ public class Admin_tab {
 		WebElement reset_btn = Config.driver.findElement(By.name(Locators.reset_button));
 
 		if(reset_btn.isDisplayed()) {
-			Config.test.pass("reset button is displayed");
-			Config.log.info("Test Passed reset button is displayed");
+			Config.test.pass("Test Passed reset button is displayed");
+			
 		}//end if
 	}// end Reset method
 
@@ -73,8 +73,8 @@ public class Admin_tab {
 		WebElement save_btn = Config.driver.findElement(By.name(Locators.save_button));
 
 		if(save_btn.isDisplayed()) {
-			Config.test.pass("save button is displayed");
-			Config.log.info("Test Passed Add button is displayed");
+			Config.test.pass(" Test Passed save button is displayed");
+			
 		}// end if
 	}// end Add method
 

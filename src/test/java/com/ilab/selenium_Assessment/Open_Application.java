@@ -1,8 +1,6 @@
 package com.ilab.selenium_Assessment;
 
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class Open_Application {
@@ -20,8 +18,8 @@ public class Open_Application {
 
 		Assert.assertEquals(actualTitle, expectedTitle);
 
-		Config.test.pass("Test Passed");
-		Config.log.info("Test Passed Title matches");
+		Config.test.pass("Test Passed Title matches");
+		
 	} // end openURL method
 	
 	

@@ -60,8 +60,8 @@ public class Add_User {
 		}		
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
-		Config.test.pass("stutus dropdown is enabled");
-		Config.log.info("Test Passed Status dropdown is Selected to enabled");
+		Config.test.pass("Test Passed stutus dropdown is enabled");
+		
 		}
 	
 

@@ -40,8 +40,8 @@ public class LogOut {
 
 		//verify that the expected result and the actual result matched or not
 		Assert.assertTrue(Config.rs);
-		Config.test.pass("url contain logout");
-		Config.log.info("Test Passed  user contain logout");
+		Config.test.pass("url contain logout user contain logout");
+		
 		}
 
 		//test
@@ -54,8 +54,8 @@ public class LogOut {
 				String expectedTitle = "OrangeHRM";
 
 				Assert.assertEquals(actualTitle, expectedTitle);
-				Config.test.pass("Test Passed");
-				Config.log.info("Test Passed Title is OrangeHRM");
+				Config.test.pass("Test Passed Title is OrangeHRM");
+				
 				
 				
 		}// end validateTitle  method
